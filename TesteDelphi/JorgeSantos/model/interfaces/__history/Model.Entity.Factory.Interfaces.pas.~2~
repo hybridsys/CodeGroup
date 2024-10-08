@@ -1,0 +1,15 @@
+unit Model.Entity.Factory.Interfaces;
+
+interface
+
+uses
+  Model.Entity.Interfaces;
+
+type
+  IEntityFactory = interface
+    function Pessoa: IEntity;
+    function Endereco: IEntity;
+  end;
+implementation
+
+end.

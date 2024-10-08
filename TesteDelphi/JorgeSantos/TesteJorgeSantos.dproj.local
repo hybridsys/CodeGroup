@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/08/08 11:11:50.000.987,=C:\systems\Unit1.pas</Transaction>
+    <Transaction>2024/10/05 08:40:31.000.066,=C:\systems\Unit1.pas</Transaction>
+    <Transaction>2024/10/05 08:41:29.000.729,C:\TesteDelphi\JorgeSantos\uFrmMain.dfm=C:\systems\Unit1.dfm</Transaction>
+    <Transaction>2024/10/05 08:41:29.000.729,C:\TesteDelphi\JorgeSantos\uFrmMain.pas=C:\systems\Unit1.pas</Transaction>
+    <Transaction>2024/10/05 08:43:59.000.912,C:\TesteDelphi\JorgeSantos\TesteJorgeSantos.dproj=C:\systems\Project1.dproj</Transaction>
+    <Transaction>2024/10/05 09:00:40.000.937,=C:\TesteDelphi\JorgeSantos\model\interfaces\Model.Connection.Interfaces.pas</Transaction>
+    <Transaction>2024/10/05 09:00:40.000.978,=C:\TesteDelphi\JorgeSantos\model\interfaces\Model.Entity.Interfaces.pas</Transaction>
+    <Transaction>2024/10/05 09:00:40.000.958,=C:\TesteDelphi\JorgeSantos\model\interfaces\Model.Entity.Factory.Interfaces.pas</Transaction>
+    <Transaction>2024/10/05 09:00:41.000.036,=C:\TesteDelphi\JorgeSantos\model\interfaces\Model.Factory.Connection.Interfaces.pas</Transaction>
+    <Transaction>2024/10/05 09:01:13.000.503,=C:\TesteDelphi\JorgeSantos\model\factory\Model.Factory.Connection.pas</Transaction>
+    <Transaction>2024/10/06 14:32:58.000.367,C:\TesteDelphi\JorgeSantos\model\interfaces\Model.Connection.Interfaces.pas=</Transaction>
+    <Transaction>2024/10/06 15:08:46.000.437,C:\TesteDelphi\JorgeSantos\model\interfaces\Model.Entity.Factory.Interfaces.pas=C:\TesteDelphi\JorgeSantos\model\interfaces\Model.Entity.DAO.Factory.Interfaces.pas</Transaction>
+    <Transaction>2024/10/06 15:09:31.000.245,C:\TesteDelphi\JorgeSantos\model\interfaces\Model.Entity.Interfaces.pas=C:\TesteDelphi\JorgeSantos\model\interfaces\Model.Entity.DAO.Interfaces.pas</Transaction>
+    <Transaction>2024/10/06 15:34:56.000.180,=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/06 15:35:34.000.620,C:\TesteDelphi\JorgeSantos\Unit1.pas=C:\TesteDelphi\JorgeSantos\model\classes\uPessoa.pas</Transaction>
+    <Transaction>2024/10/06 15:42:28.000.071,C:\TesteDelphi\JorgeSantos\model\classes\uPessoa.pas=C:\TesteDelphi\JorgeSantos\model\classes\Model.Pessoa.pas</Transaction>
+    <Transaction>2024/10/06 15:43:44.000.255,=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/06 15:54:20.000.172,C:\TesteDelphi\JorgeSantos\Unit1.pas=C:\TesteDelphi\JorgeSantos\model\factory\Model.Entity.DAO.Factory.pas</Transaction>
+    <Transaction>2024/10/06 16:02:09.000.884,=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/06 16:06:21.000.002,C:\TesteDelphi\JorgeSantos\Unit1.pas=C:\TesteDelphi\JorgeSantos\model\DAO\uPessoaDAO.pas</Transaction>
+    <Transaction>2024/10/06 21:44:00.000.068,=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/06 23:07:11.000.504,C:\TesteDelphi\JorgeSantos\model\interfaces\Controller.Pessoa.Interfaces.pas=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/06 23:29:44.000.729,=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/06 23:32:04.000.100,C:\TesteDelphi\JorgeSantos\model\Controller\Controller.Pessoa.pas=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/07 07:48:04.000.193,C:\TesteDelphi\JorgeSantos\model\DAO\uPessoaDAO.pas=C:\TesteDelphi\JorgeSantos\model\DAO\Pessoa.DAO.pas</Transaction>
+    <Transaction>2024/10/07 07:49:19.000.827,=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/07 07:50:13.000.317,C:\TesteDelphi\JorgeSantos\Unit1.pas=C:\TesteDelphi\JorgeSantos\model\classes\Model.Endereco.pas</Transaction>
+    <Transaction>2024/10/07 08:25:23.000.234,=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/07 08:27:14.000.231,C:\TesteDelphi\JorgeSantos\Unit1.pas=C:\TesteDelphi\JorgeSantos\model\DAO\Endereco.DAO.pas</Transaction>
+    <Transaction>2024/10/07 19:19:37.000.817,=C:\TesteDelphi\JorgeSantos\Unit1.pas</Transaction>
+    <Transaction>2024/10/07 19:20:30.000.856,C:\TesteDelphi\JorgeSantos\Unit1.pas=C:\TesteDelphi\JorgeSantos\Util\uUtilities.pas</Transaction>
+    <Transaction>2024/10/07 20:35:50.000.764,C:\TesteDelphi\JorgeSantos\Util\uUtilities.pas=C:\TesteDelphi\JorgeSantos\Util\Util.Utilities.pas</Transaction>
+    <Transaction>2024/10/07 20:36:33.000.571,C:\TesteDelphi\JorgeSantos\Util\Util.Utilities.pas=C:\TesteDelphi\JorgeSantos\Util\Util.UConsulta.pas</Transaction>
+    <Transaction>2024/10/07 20:36:40.000.233,C:\TesteDelphi\JorgeSantos\Util\Util.UConsulta.pas=C:\TesteDelphi\JorgeSantos\Util\Util.Consulta.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="model"/>
+    <File Path="model\classes"/>
+    <File Path="model\classes\Model.Endereco.pas"/>
+    <File Path="model\classes\Model.Pessoa.pas"/>
+    <File Path="model\Controller"/>
+    <File Path="model\Controller\Controller.Pessoa.pas"/>
+    <File Path="model\DAO"/>
+    <File Path="model\DAO\Endereco.DAO.pas"/>
+    <File Path="model\DAO\Pessoa.DAO.pas"/>
+    <File Path="model\factory"/>
+    <File Path="model\factory\Model.Entity.DAO.Factory.pas"/>
+    <File Path="model\factory\Model.Factory.Connection.pas"/>
+    <File Path="model\interfaces"/>
+    <File Path="model\interfaces\Controller.Pessoa.Interfaces.pas"/>
+    <File Path="model\interfaces\Model.Entity.DAO.Factory.Interfaces.pas"/>
+    <File Path="model\interfaces\Model.Entity.DAO.Interfaces.pas"/>
+    <File Path="model\interfaces\Model.Factory.Connection.Interfaces.pas"/>
+    <File Path="Util"/>
+    <File Path="Util\Util.Consulta.pas"/>
+    <File Path="uFrmMain.pas"/>
+    <File Path="uFrmMain.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

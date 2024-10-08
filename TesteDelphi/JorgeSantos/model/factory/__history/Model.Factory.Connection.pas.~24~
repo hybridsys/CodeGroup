@@ -1,0 +1,108 @@
+unit Model.Factory.Connection;
+
+interface
+
+uses
+  Model.Factory.Connection.Interfaces, IniFiles, FireDAC.Comp.Client, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet,  FireDAC.UI.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Phys,
+  FireDAC.VCLUI.Wait, FireDAC.Phys.PG, FireDAC.Phys.PGDef;
+type
+  TFactoryConnection = class(TInterfacedObject, IFactoryConnection)
+  private
+    FConnection: TFDConnection;
+    FDriver: TFDPhysDriverLink;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: IFactoryConnection;
+    function Connection: TFDConnection;
+    function Query: TFDQuery;
+  end;
+implementation
+
+uses
+  System.SysUtils, Vcl.Forms;
+
+{ TFactoryConnection }
+
+function TFactoryConnection.Connection: TFDConnection;
+var
+  Config: TIniFile;
+  Server: String;
+  Database: String;
+  UserDB: String;
+  PasswordDB: String;
+  PortDB: String;
+  LibConnection: String;
+  DriverDB: String;
+begin
+  Config := TIniFile.Create(ExtractFilePath(Application.ExeName) + '\Config.Ini');
+  try
+    Server := Config.ReadString('CONFIGDB', 'Server', 'localhost');
+    Database :=  Config.ReadString('CONFIGDB', 'Databse', 'Teste');
+    UserDB := Config.ReadString('CONFIGDB', 'UserName', 'postgress');
+    PasswordDB := Config.ReadString('CONFIGDB', 'Password', 'postgres');
+    PortDB := Config.ReadString('CONFIGDB', 'Port', '5432');
+    DriverDB := Config.ReadString('CONFIGDB', 'Driver', 'PG');
+    LibConnection := Config.ReadString('CONFIGDB', 'LibConnection', 'libpq.dll');
+
+    FDriver := TFDPhysPgDriverLink.Create(Application);
+    FDriver.VendorLib := LibConnection;
+
+    FConnection := TFDConnection.Create(Application);
+    FConnection.Params.DriverID := DriverDB;
+    FConnection.Params.Database := Database;
+    FConnection.Params.UserName := UserDB;
+    FConnection.Params.Password := PasswordDB;
+    FConnection.Params.Add('Server=' + Server);
+    FConnection.Params.Add('Port=' + PortDB);
+
+    try
+      FConnection.Open;
+    except
+      on E: Exception do
+      begin
+        FreeAndNil(FConnection);
+        raise Exception.Create('Erro ao conectar ao banco de dados: ' + E.Message);
+      end;
+    end;
+  finally
+    Config.Free;
+  end;
+  Result := FConnection;
+end;
+
+constructor TFactoryConnection.Create;
+begin
+
+end;
+
+destructor TFactoryConnection.Destroy;
+begin
+  if Assigned(FConnection) then
+  begin
+    FConnection.Close;
+    FreeAndNil(FDriver);
+    FreeAndNil(FConnection);
+  end;
+  inherited;
+end;
+
+class function TFactoryConnection.New: IFactoryConnection;
+begin
+  Result := Self.Create;
+end;
+
+function TFactoryConnection.Query: TFDQuery;
+var
+  FFDQuery: TFDQuery;
+begin
+  FFDQuery := TFDQuery.Create(Application);
+  FFDQuery.Connection := Self.Connection;
+  Result := FFDquery;
+end;
+
+end.

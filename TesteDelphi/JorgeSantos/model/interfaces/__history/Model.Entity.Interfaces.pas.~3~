@@ -1,0 +1,21 @@
+unit Model.Entity.Interfaces;
+
+interface
+
+uses
+  Data.DB, System.Classes, System.Generics.Collections;
+
+type
+  IEntity = interface
+    ['{6B9E9648-0394-47F3-A6B7-1009485E931B}']
+    function Dataset(aValue: TDatasource): IEntity; overload;
+    function Dataset(aValue: TDataset): IEntity; overload;
+    procedure Open;
+    procedure Insert(aObjeto: TObject);
+    procedure Update(aObjeto: TObject);
+    function Delete(aObjeto: TObject): Boolean;
+    function Get(aId: Integer): IEntity;
+  end;
+implementation
+
+end.

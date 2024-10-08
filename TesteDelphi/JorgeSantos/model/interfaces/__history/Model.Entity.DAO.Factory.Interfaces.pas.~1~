@@ -1,0 +1,15 @@
+unit Model.Entity.Factory.Interfaces;
+
+interface
+
+uses
+  Model.Entity.Interfaces;
+
+type
+  IEntityDAOFactory = interface
+    function PessoaDAO: IEntityDAO;
+    function EnderecoDAO: IEntityDAO;
+  end;
+implementation
+
+end.

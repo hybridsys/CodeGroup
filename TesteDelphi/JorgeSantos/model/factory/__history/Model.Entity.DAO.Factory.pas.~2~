@@ -1,0 +1,9 @@
+unit Model.Entity.DAO.Factory;
+
+interface
+
+type
+  TEntityDAOFactory = class(TInterfacedObject, IEntityDAOFactory)
+implementation
+
+end.

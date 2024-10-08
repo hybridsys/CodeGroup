@@ -1,0 +1,17 @@
+unit Model.Entity.Factory.Interfaces;
+
+interface
+
+uses
+  Model.Entity.Interfaces;
+
+type
+  IEntityFactory = interface
+    function Client: IEntity;
+    function Product: IEntity;
+    function Order: IEntity;
+    function OrderProduct: IEntity;
+  end;
+implementation
+
+end.

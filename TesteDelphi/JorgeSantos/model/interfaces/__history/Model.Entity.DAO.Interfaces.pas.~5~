@@ -1,0 +1,22 @@
+unit Model.Entity.DAO.Interfaces;
+
+interface
+
+uses
+  Data.DB, System.Classes;
+
+type
+  IEntityDAO = interface
+    ['{6B9E9648-0394-47F3-A6B7-1009485E931B}']
+    function Dataset(aValue: TDatasource): IEntityDAO; overload;
+    function Dataset(aValue: TDataset): IEntityDAO; overload;
+    procedure Open;
+    procedure Insert(aObjeto: TObject);
+    procedure Update(aObjeto: TObject);
+    function Delete(aId: Int64): Boolean;
+    function Get(aId: Int64): TObject;
+  end;
+implementation
+
+
+end.
